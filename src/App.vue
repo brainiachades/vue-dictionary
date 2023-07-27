@@ -11,8 +11,7 @@ const searchFn = (input) => {
     .then((res) => {
       // console.log(res);
       if (!res.ok) {
-        entries.value = []
-        return
+        throw new Error('Not Found')
       }
 
       return res.json()
