@@ -2,10 +2,12 @@
   "name": "vue-dictionary",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://brainiachades.github.io/vue-dictionary/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.6"
